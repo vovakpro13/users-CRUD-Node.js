@@ -64,7 +64,6 @@ module.exports = {
     confirmReset: async (req, res, next) => {
         try {
             const { user } = req;
-            console.log(user)
             const { resetToken } = tokenService.generateResetTokenForUser(user);
 
             const resetLink = `${ RESET_PASSWORD_FORM }?resetToken=${ resetToken }`;
