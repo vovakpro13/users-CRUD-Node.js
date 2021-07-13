@@ -1,0 +1,33 @@
+{
+  "name": "users-crud",
+  "version": "1.0.0",
+  "description": "Okten test task",
+  "main": "app",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "satrt": "node app.js"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "express",
+    "jwt"
+  ],
+  "author": "Melnyk Volodymyr",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.944.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "email-templates": "^8.0.7",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "joi": "^17.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.2",
+    "nodemailer": "^6.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

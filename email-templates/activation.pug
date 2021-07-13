@@ -1,0 +1,11 @@
+extends index
+block variables
+    - const headerTitle = title
+block content
+    div.padding20
+        div
+            | Hello, #{ name }, can do you verify your e-mail, please?
+            | Just click on the button👇
+        br
+        a(href=activationLink).a-button
+            | Yes, verify :)

@@ -1,0 +1,14 @@
+doctype html
+html
+    block variables
+    head
+        style
+            include css/index-style.css
+    body
+        div#wrapper
+            header.centerChild
+                | #{ headerTitle }
+            block content
+            footer.centerChild
+                p
+                    | Copyright &copy; | 2021

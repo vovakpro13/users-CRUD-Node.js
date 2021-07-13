@@ -1,0 +1,13 @@
+extends index
+block variables
+    - const headerTitle = title
+block content
+    div.padding20
+        p
+            | #{ name }, for continue password changing - click on this link:
+        a(href=resetLink)
+            | #{ resetLink }
+
+    div
+        p
+            | If you don`t know what is it, just ignore this letter!
