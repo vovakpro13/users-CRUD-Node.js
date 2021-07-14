@@ -88,7 +88,7 @@ module.exports = {
             user.password = await passwordHasher.hash(newPassword);
             user.resetToken = 0;
 
-            user.save();
+            await user.save();
 
             res.status(responseCodes.UPDATED).end();
         } catch (e) {
