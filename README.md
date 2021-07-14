@@ -205,7 +205,7 @@
 
 
 | **Error code** | Message |
-| ------------ |: ------------- |
+| ------------ | ------------- | -- |
 | 4041 | Record is not found |
 | 4042 | Route is not found |
 | 4091 | Email is already exist |
