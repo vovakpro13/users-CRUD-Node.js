@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "4fd28167-0eb8-4299-9cf4-1a10f155e2ce",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User | Get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users?page=2&perPage=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "perPage",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User | Get one",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/60ef54c5f499f61894b235e7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"60ef54c5f499f61894b235e7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User | Create",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "Volodymyr",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Melnyk",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "vovakpro13@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Lviv, Pryrodna Street",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Volodya34mel",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "/D:/OneDrive/Робочий стіл/me.jpg"
+						},
+						{
+							"key": "cv",
+							"type": "file",
+							"src": "/D:/OneDrive/Робочий стіл/Melnyk Volodymyr Resume (2).pdf"
+						},
+						{
+							"key": "video",
+							"type": "file",
+							"src": []
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User | Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjYxNzk3NjUsImV4cCI6MTYyNjE4MDY2NX0.whEboACDeIqh4aXGbDzRFD9R51RiibfPv_3dhYjBSh4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Volodymyr_boss34\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/60ed88361c1b5b35f45627e9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"60ed88361c1b5b35f45627e9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User |Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjYxNzk0MTYsImV4cCI6MTYyNjE4MDMxNn0.K7jfqNiKCTIy5rDlDzcCwsQXLYsgUwE0yeOTLDhRRMM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/users/60ed5437cc8e091ec4236eac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"60ed5437cc8e091ec4236eac"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

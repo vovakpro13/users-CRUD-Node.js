@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "8f0c9116-6e6a-4ab1-a102-6cbeb6c354de",
+		"name": "Avatar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Avatar | Remove",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjYxMjAxNTYsImV4cCI6MTYyNjEyMTA1Nn0.OgrJaiIzQni_tMl9O6mjQnvHkqcmFFJ7ltlIbmgkj0E",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/users/60eb2eebfc53c3149820510c/avatar/60ef54d0f499f61894b235e9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"60eb2eebfc53c3149820510c",
+						"avatar",
+						"60ef54d0f499f61894b235e9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Avatar | Add new",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjYxMjAxNTYsImV4cCI6MTYyNjEyMTA1Nn0.OgrJaiIzQni_tMl9O6mjQnvHkqcmFFJ7ltlIbmgkj0E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Avatr",
+							"type": "file",
+							"src": "/D:/OneDrive/Робочий стіл/photo_2021-05-23_19-08-07.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/60eb2eebfc53c3149820510c/avatar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"60eb2eebfc53c3149820510c",
+						"avatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Avatar | Set new main",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjYxMjAxNTYsImV4cCI6MTYyNjEyMTA1Nn0.OgrJaiIzQni_tMl9O6mjQnvHkqcmFFJ7ltlIbmgkj0E",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/users/60eb2eebfc53c3149820510c/avatar/60eb2f63fc53c31498205122",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"60eb2eebfc53c3149820510c",
+						"avatar",
+						"60eb2f63fc53c31498205122"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
