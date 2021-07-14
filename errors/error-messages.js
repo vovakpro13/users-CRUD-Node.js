@@ -15,7 +15,7 @@ module.exports = {
     },
 
     BAD_REQUEST_BODY: {
-        message: 'Body has not allowed key',
+        message: 'The request body is wrong',
         code: 4000
     },
 

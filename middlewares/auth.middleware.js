@@ -17,7 +17,7 @@ module.exports = {
                 .select('+password');
 
             if (!user) {
-                ErrorHandler.throwUnauthorized();
+                ErrorHandler.throwWrongAuthError();
             }
 
             req.user = user;

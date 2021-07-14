@@ -24,9 +24,16 @@ const { models: { User, Avatar } } = require('../database');
 module.exports = {
     getAllUsers: async (req, res, next) => {
         try {
-            const users = await User.find();
+            const { perPage = 10, page = 1 } = req.query;
 
-            res.status(responseCodes.OK).json(users);
+            const users = await User
+                .find()
+                .limit(+perPage)
+                .skip(+perPage * (+page - 1));
+
+            const totalCount = (await User.find()).length;
+
+            res.status(responseCodes.OK).json({ users, totalCount  });
         } catch (err) {
             next(err);
         }

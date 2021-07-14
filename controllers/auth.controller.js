@@ -3,7 +3,7 @@ const { passwordHasher, dataNormalizators: { userNormalize } } = require('../hel
 const { ErrorHandler } = require('../errors');
 const {
     responseCodes,
-    frontendEndpoints: { PROFILE, RESET_PASSWORD_FORM },
+    frontendEndpoints: { SIGN_IN, RESET_PASSWORD_FORM },
     authKeywords: { CREATE_TOKENS, REWRITE_TOKENS },
     emailActions: { RESET_PASSWORD },
 } = require('../constants');
@@ -55,7 +55,7 @@ module.exports = {
 
             await user.save();
 
-            res.redirect(PROFILE);
+            res.redirect(`${ SIGN_IN }?successActivation=true`);
         } catch (e) {
             next(e);
         }

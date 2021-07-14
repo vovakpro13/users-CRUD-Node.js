@@ -36,14 +36,14 @@ class ErrorHandler extends Error {
             });
     }
 
-    static throwWrongAuthError() {
+    static throwUnauthorized() {
         throw new ErrorHandler(
             responseCodes.UNAUTHORIZED,
             UNAUTHORIZED.message,
             UNAUTHORIZED.code);
     }
 
-    static throwUnauthorized() {
+    static throwWrongAuthError() {
         throw new ErrorHandler(
             responseCodes.BAD_REQUEST,
             WRONG_EMAIL_OR_PASSWORD.message,
