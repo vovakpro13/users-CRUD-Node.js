@@ -11,7 +11,7 @@
                "address": "Lviv, Pryrodna Street",
                "email": "vovakpro13@gmail.com",
                "password": "Volodya34mel",
-               "avatar": me.jpg
+               "avatar": "me.jpg"
            }
        ```
     If create success user will get the **email** letter with **activation link**
@@ -31,7 +31,7 @@
               "firstName": "Volodymyr",
               "lastName": "Melnyk",
               "email": "vovakpro13@gmail.com",
-              ...
+              "...": "..."
           }
       }
       ```
@@ -73,7 +73,7 @@
                "isActivated": false,
                "_id": "60ef4cff6367c73520fa8742",
                "firstName": "Ostap",
-               ...
+               "...": "..."
            },
            {
                "avatars": [
@@ -81,13 +81,13 @@
                        "_id": "60ef54d0f499f61894b235e9",
                        "user": "60ef54c5f499f61894b235e7",
                        "imageUrl": "users/60ef54c5f499f61894b235e7/images/1f6b4f39-9517-4657-a12b-ef16763d1ede.jpg",
-                       ...
+                       "...": "..."
                    }
                ],
                "isActivated": false,
                "_id": "60ef54c5f499f61894b235e7",
                "firstName": "Volodymyr",
-               ...
+              "...": "..."
            }
        ],
    
@@ -105,14 +105,14 @@
               {
                   "_id": "60ef54d0f499f61894b235e9",
                   "user": "60ef54c5f499f61894b235e7",
-                  ...
+                  "...": "..."
               }
           ],
   
           "isActivated": false,
           "_id": "60ef54c5f499f61894b235e7",
           "firstName": "Volodymyr",
-          ...
+          "...": "..."
       }
    ```
 
@@ -169,10 +169,10 @@
           "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjYyOTk3MjIsImV4cCI6MTYyNjMwMDYyMn0.k5Jff3cqj2D2IoQo1PjKcF1Xf2WjXddpUHhchHpJ7u4",
           "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjYyOTk3MjIsImV4cCI6MTYzMTQ4MzcyMn0.kJ7OpwI3Faz9zicsdfZAkPhFXrdxcBb7iZooyjOFwOw",
           "user": {
-              "avatars": [ ... ],
+              "avatars": "[ ... ]",
               "isActivated": true,
               "_id": "60ef54c5f499f61894b235e7",
-              ...
+              "...": "..."
           }
       }
    ```
@@ -202,6 +202,7 @@
 
 
 ## Errors
+
 
 **Error code** | Message
     ------------ | -------------
