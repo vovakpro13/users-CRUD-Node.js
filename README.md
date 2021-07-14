@@ -204,17 +204,17 @@
 ## Errors
 
 
-**Error code** | Message
-    ------------ | -------------
-4041 | Record is not found
-4042 | Route is not found
-4091 | Email is already exist
-4000 | The request body is wrong
-4001 | Email or password is wrong
-4002 | Email is not activated
-4003 | You havn`t access to this endpoint!
-4004 | The file has very big size
-4005 | The file type is not allowed!
-4006 | Reset token is not exist!
-4010 | User is not authorized!
-5000 | Email template is wrong!
+| **Error code** | Message
+| ------------ |: -------------
+| 4041 | Record is not found
+| 4042 | Route is not found
+| 4091 | Email is already exist
+| 4000 | The request body is wrong
+| 4001 | Email or password is wrong
+| 4002 | Email is not activated
+| 4003 | You havn`t access to this endpoint!
+| 4004 | The file has very big size
+| 4005 | The file type is not allowed!
+| 4006 | Reset token is not exist!
+| 4010 | User is not authorized!
+| 5000 | Email template is wrong!
