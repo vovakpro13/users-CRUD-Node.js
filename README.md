@@ -39,7 +39,7 @@
 
 2) ### Update data: `PUT /users/:id`
    
-      * ####_Required headers:_ `Authorization` (must have **access token**)   
+      * #### _Required headers:_ `Authorization` (must have **access token**)   
       
       _Request Body_ (at least must be present a one parameter):
    
